@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+/*Gradient background and other customizations of the web site*/
+  background-image: radial-gradient(circle, lightGrey, grey, black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  margin: auto auto;
+  width: auto;
+}
+
+h1 {
+  background-color: #D3D3D3;
+  box-shadow: 0 3px 10px rgba(1, 1, 1, 1.24), 0 1px 2px rgba(1, 1, 1, 1.12);
+  padding: 5%;
+  display: flex;
+  margin: 25px 0;
+}
+
+h3 {
+  border-bottom: 2px solid #000000;
+  padding-bottom: auto;
+  margin: auto 0 auto;
+}
+
+h4 {
+  margin: 0;
+}
+/*background and customisation of the income and expense container*/
+.income-expense-container {
+  background-color: #696969;
+  box-shadow: 0 3px 10px rgba(1, 1, 1, 1.24), 0 1px 2px rgba(1, 1, 1, 1.12);
+  padding: 5%;
+  display: flex;
+  margin: 25px 0;
+}
+
+.income-expense-container > div {
+  flex: 2;
+  text-align: center;
+}
+
+.income-expense-container > div:first-of-type {
+  border-right: 3px solid #dedede;
+}
+/*My Income and Expense font size*/
+.money {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 6px 0;
+}
+
+/*My Income*/
+.money.plus {
+  color: #00FA9A;
+}
+
+/*My Expense*/
+.money.minus {
+  color: #FF7F50;
+}
+
+/*My History*/
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+/*Enter Transaction details request*/
+input[type='text'],
+input[type='number'] {
+  font-size: 15px;
+  border: 1px solid #32CD32;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  padding: 11px;
+}
+
+/*Add My Transaction button*/
+.btn {
+  cursor: pointer;
+  background-color: #3CB371;
+  box-shadow: 0 3px 10px rgba(1, 1, 1, 1.24), 0 1px 2px rgba(1, 1, 1, 1.12);
+  font-size: 16px;
+  color: #fff;
+  border: 2;
+  display: block;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+}
+/*Remove button customisation*/
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.list li {
+  background-color: #F5F5F5;
+  box-shadow: 0 2px 5px rgba(1, 1, 1, 1.24), 0 1px 2px rgba(1, 1, 1, 1.12);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.list li.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+.list li.minus {
+  border-right: 5px solid #c0392b;
+}
+
+/*Remove button*/
+.delete-btn {
+  cursor: pointer;
+  background-color: #FF6347;
+  border: 0;
+  color: #FFFFFF;
+  font-size: 100%;
+  line-height: 100%;
+  padding: 3px 6px;
+  position: absolute;
+  top: 50%;
+  left: 10;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+/*Remove button customisation*/
+.list li:hover .delete-btn {
+  opacity: 2;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+	<!-- Setting the viewport to make your website look good on all devices: -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />  <!--Link the html file to the css file-->
+    <title>My Expense Tracker</title>
+  </head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <body>
+    <h2>My Expense Tracker</h2>
+	
+	<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+	
+    <div class="container">
+      <h3>My Balance</h3>
+      <h1 id="balance">Rs0.00</h1>
+
+      <div class="income-expense-container">
+        <div>
+          <h4>MY INCOME</h4>
+          <p id="money-plus" class="money plus">+Rs0.00</p>
+        </div>
+        <div>
+          <h4>MY Expense</h4>
+          <p id="money-minus" class="money minus">-Rs0.00</p>
+        </div>
+      </div>
+
+      <h3>My History</h3>
+      <ol id="list" class="list">
+        <!-- My history list and delete button is display here.-->
+      </ol>
+
+      <h3>Enter New Transaction</h3>
+	  
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Transaction Details</label>
+          <input type="text" id="text" placeholder="Please enter Transaction details here" />
+        </div>
+        <div class="form-control">
+          <label for="figure"
+            >Transaction Amount/Figure For :<br />
+            expense use (-) minus sign | income use (+) plus sign</label
+          >
+          <input type="number" id="figure" placeholder="Please enter Transaction Amount/Figure here" />
+        </div>
+        <button class="btn">Add My Transaction</button>
+      </form>
+    </div>
+    <script src="script.js"></script><!--Link the html file to the java script file-->
+  </body>
+</html>
