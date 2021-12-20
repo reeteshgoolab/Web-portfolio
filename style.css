@@ -29,7 +29,7 @@ h1 {
 
 h3 {
   border-bottom: 2px solid #000000;
-  padding-bottom: auto;
+  padding-bottom: 10px;
   margin: auto 0 auto;
 }
 
@@ -94,7 +94,7 @@ input[type='number'] {
   box-shadow: 0 3px 10px rgba(1, 1, 1, 1.24), 0 1px 2px rgba(1, 1, 1, 1.12);
   font-size: 16px;
   color: #fff;
-  border: 2;
+  border: 2px;
   display: block;
   margin: 10px 0 30px;
   padding: 10px;
@@ -142,7 +142,7 @@ input[type='number'] {
   padding: 3px 6px;
   position: absolute;
   top: 50%;
-  left: 10;
+  left: 10px;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
