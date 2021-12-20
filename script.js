@@ -136,5 +136,4 @@ function init() {
 
 //call the init function and submit transaction to be displayed and saved
 init();
-
 form.addEventListener('submit', addTransaction);
